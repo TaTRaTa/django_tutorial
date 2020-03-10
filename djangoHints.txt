@@ -1,0 +1,16 @@
+init: 
+	virtualenv {EnvName}
+
+
+
+django-admin startproject {ProjectName}
+
+manage.py startapp {AppName}
+
+manage.py runserver
+
+-- create admin user
+	python manage.py createsuperuser
+	
+	
+	 python manage.py shell
